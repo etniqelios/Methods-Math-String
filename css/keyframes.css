@@ -1,0 +1,22 @@
+@keyframes --mobile-menu-open {
+    0% {
+        display: block;
+        width: 0;
+    }
+    100% {
+        width: 800px;
+    }
+}
+
+
+@keyframes --animation-info-box{
+    0% {
+        color: transparent;
+        opacity: 0;
+    }
+    100% {
+        width: auto;
+        opacity: 1;
+        color: black;
+    }
+}

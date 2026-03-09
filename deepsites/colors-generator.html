@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xgen: Generate colors</title>
+    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/keyframes.css">
+
+    <!-- SYMBOLS/EMOTICONS PACK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../icon/icon-2.ico">
+</head>
+<body>
+    <div id="root">
+
+        <!-- PC VERSION MENU -->
+        <div class="--navigation prevent-select">
+
+            <div class="--navigation-header">Menu option</div>
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="location-name"></span>
+            </a>
+
+            <a class="--navigation-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <div style="width: auto; height: 50px;"></div>
+
+            <a class="--navigation-button" id="bookmark-1">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">HEX</span>
+            </a>
+            <a class="--navigation-button"   id="bookmark-2">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">RGB</span>
+            </a>
+
+
+
+            <!-- ALL PC LINKS -->
+
+            <!--
+
+EXAMPLE LOCATION
+
+<a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+<span class="emoticon-house">
+    <i class="fa-solid fa-house" style="color: white"></i>
+</span>
+<span class="text-content-button">Index</span>
+</a>
+
+-->
+
+            <div class="--navigation-background-panel">
+                <div class="--navigation-gui-info">
+                    <span id="version-pc"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOBLIE VERSION MENU -->
+        <div class="--navigation-moblie prevent-select" id="window-menu">
+
+            <div class="--navigation-mobile-header">Menu option</div>
+
+            <div class="--navigation-mobile-close-button" onclick="MenuClose()">
+                <i class="fa-solid fa-close"></i>
+                <span class="text-content-button">Close menu</span>
+            </div>
+
+            <a class="--navigation-mobile-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="mobile-location-name"></span>
+            </a>
+
+            <a class="--navigation-mobile-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <div style="width: auto; height: 50px;"></div>
+
+            <a class="--navigation-mobile-button" id="bookmark-mobile-1">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">HEX</span>
+            </a>
+            <a class="--navigation-mobile-button" id="bookmark-mobile-2">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">RGB</span>
+            </a>
+
+            <!-- ALL MOBLIE LINKS -->
+
+            <div class="--navigation-mobile-gui-info">
+                <span id="version-mobile"></span>
+            </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="--index-page">
+            <div class="--index-container" id="page-1" style="display: block">
+
+                <div class="--index-page-header-box prevent-select">
+                    <i class="fa-solid fa-pencil --header-box-float-right" style="color: white;"></i>
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="--index-content-box">
+                    <div class="prevent-select">
+                        <h3>HEX colors</h3>
+                        <p>Generate random color</p>
+                    </div>
+                    <div style="align-items: center; display: flex; justify-content: center; gap: 10px;">
+                        <div id="hex-color-output"></div>
+                        <div id="hex-color-box" class="color-box"></div>
+                    </div>
+                </div>
+
+                <div class="--page-footer-box prevent-select">
+                    <button onclick="TryGenerateHEX()">Generate</button>
+                </div>
+
+            </div>
+            <div class="--index-container" id="page-2" style="display: none">
+
+                <div class="--index-page-header-box prevent-select">
+                    <i class="fa-solid fa-pencil --header-box-float-right" style="color: white;"></i>
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="--index-content-box">
+                    <div class="prevent-select">
+                        <h3>RGB colors</h3>
+                        <p>Generate random color:</p>
+                    </div>
+                    <div style="align-items: center; display: flex; justify-content: center; gap: 10px;">
+                        <div id="rgb-color-output"></div>
+                        <div id="rgb-color-box" class="color-box"></div>
+                    </div>
+                </div>
+
+                <div class="--page-footer-box prevent-select">
+                    <button onclick="TryGenerateRGB()">Generate</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="../js/toggle-menu.js"></script>
+        <script src="../js/infos.js"></script>
+        <script src="../js/title-reader.js"></script>
+        <script src="../js/generate-hex-color.js"></script>
+        <script src="../js/generate-rgb.js"></script>
+        <script src="../js/two-change-page.js"></script>
+
+        <div class="--footer prevent-select"></div>
+    </div>
+</body>
+</html>
+

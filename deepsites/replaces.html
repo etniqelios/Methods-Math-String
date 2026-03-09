@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xgen: Replaces</title>
+    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/keyframes.css">
+
+    <!-- SYMBOLS/EMOTICONS PACK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../icon/icon-2.ico">
+</head>
+<body>
+    <div id="root">
+
+        <!-- PC VERSION MENU -->
+        <div class="--navigation prevent-select">
+
+            <div class="--navigation-header">Menu option</div>
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="location-name"></span>
+            </a>
+
+            <a class="--navigation-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <!-- ALL PC LINKS -->
+
+            <!--
+
+                EXAMPLE LOCATION
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-house">
+                    <i class="fa-solid fa-house" style="color: white"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            -->
+
+            <div class="--navigation-background-panel">
+                <div class="--navigation-gui-info">
+                    <span id="version-pc"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOBLIE VERSION MENU -->
+        <div class="--navigation-moblie prevent-select" id="window-menu">
+
+            <h1>Menu selector</h1>
+
+            <div class="--navigation-mobile-close-button" onclick="MenuClose()">
+                <i class="fa-solid fa-close"></i>
+                <span class="text-content-button">Close menu</span>
+            </div>
+
+            <a class="--navigation-mobile-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="mobile-location-name"></span>
+            </a>
+
+            <a class="--navigation-mobile-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <!-- ALL MOBLIE LINKS -->
+
+            <div class="--navigation-mobile-gui-info">
+                <span id="version-mobile"></span>
+            </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="--index-page">
+            <div class="--index-container" id="page1" style="display: block">
+                <div class="--index-page-header-box prevent-select">
+                    <i class="fa-solid fa-circle --header-box-float-right" style="color: white;"></i>
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="--index-content-box prevent-select">
+                    <p>Replace words in sentence</p>
+                    <hr>
+                    <textarea placeholder="Sentence..." class="--index-textarea textarea-words " id="textarea-1"></textarea>
+                    <div style="justify-content: center;">
+                        <input type="text" class="input-words" placeholder="input" id="input-1-1">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <input type="text" class="input-words" placeholder="output" id="output-1-2"><br>
+                        <input type="text" class="input-words" placeholder="input" id="input-2-1">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <input type="text" class="input-words" placeholder="output" id="output-2-2">
+                    </div>
+                    <br><button style="float: left; margin: 25px;" onclick="Example()">Show example</button>
+                    <button style="float: left; margin: 25px; margin-left: 0;" onclick="Reset()">Reset</button>
+                    <button style="float: right; margin: 25px;" onclick="Replace()">Replace</button>
+
+                    <hr style="clear: both;">
+                    <p class="box-text" id="output-replaced-words">Here will show replaced sentence.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="../js/toggle-menu.js"></script>
+        <script src="../js/infos.js"></script>
+        <script src="../js/title-reader.js"></script>
+        <script src="../js/replace-words.js"></script>
+
+        <div class="--footer prevent-select"></div>
+    </div>
+</body>
+</html>
+

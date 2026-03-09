@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xgen: Randoms</title>
+    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/keyframes.css">
+
+    <!-- SYMBOLS/EMOTICONS PACK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../icon/icon-2.ico">
+</head>
+<body>
+    <div id="root">
+
+        <!-- PC VERSION MENU -->
+        <div class="--navigation prevent-select">
+
+            <div class="--navigation-header">Menu option</div>
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="location-name"></span>
+            </a>
+
+            <a class="--navigation-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <div style="width: auto; height: 50px;"></div>
+
+            <a class="--navigation-button" id="bookmark-1">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">Student number</span>
+            </a>
+
+            <a class="--navigation-button"   id="bookmark-2">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">-</span>
+            </a>
+
+            <a class="--navigation-button"   id="bookmark-3">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">-</span>
+            </a>
+
+            <!-- ALL PC LINKS -->
+
+            <!--
+
+                EXAMPLE LOCATION
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-house">
+                    <i class="fa-solid fa-house" style="color: white"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            -->
+
+            <div class="--navigation-background-panel">
+                <div class="--navigation-gui-info">
+                    <span id="version-pc"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOBLIE VERSION MENU -->
+        <div class="--navigation-moblie prevent-select" id="window-menu">
+
+            <h1>Menu selector</h1>
+
+            <div class="--navigation-mobile-close-button" onclick="MenuClose()">
+                <i class="fa-solid fa-close"></i>
+                <span class="text-content-button">Close menu</span>
+            </div>
+
+            <a class="--navigation-mobile-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="mobile-location-name"></span>
+            </a>
+
+            <a class="--navigation-mobile-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <div style="width: auto; height: 50px;"></div>
+
+            <a class="--navigation-mobile-button" id="bookmark-mobile-1">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">Studnet number</span>
+            </a>
+
+            <a class="--navigation-mobile-button"   id="bookmark-mobile-2">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">-</span>
+            </a>
+
+            <a class="--navigation-mobile-button"   id="bookmark-mobile-3">
+                <span class="emoticon-yellow">
+                    <i class="fa-solid fa-cube"></i>
+                </span>
+                <span class="text-content-button">-</span>
+            </a>
+
+            <!-- ALL MOBLIE LINKS -->
+
+            <div class="--navigation-mobile-gui-info">
+                <span id="version-mobile"></span>
+            </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="--index-page">
+            <div class="--index-container" id="page-1" style="display: block">
+                <div class="--index-page-header-box prevent-select">
+                    <i class="fa-solid fa-calculator --header-box-float-right" style="color: white;"></i>
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="--index-content-box prevent-select">
+                    <p>Random student's number</p>
+                    <hr>
+                    <input class="input-randoms" type="number" value="1" max="99" id="number-value-1"><span>|</span><input class="input-randoms" type="number" value="31" max="99" id="number-value-2">
+                    <button onclick="GetRandomNumber()">Try</button>
+                    <hr>
+                    <p id="student-number-output" class="box-text">Number will show here</p>
+                </div>
+            </div>
+
+             <div class="--index-container" id="page-2" style="display: none">
+                <div class="--index-page-header-box prevent-select">
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+               <div class="--index-content-box prevent-select">
+                    <h3>Random somethng </h3>
+                    <p>I don't know yet what</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="--index-container" id="page-3" style="display: none">
+                <div class="--index-page-header-box prevent-select">
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="--index-content-box prevent-select">
+                   <h3>Random somethng </h3>
+                    <p>I don't know yet what</p>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="../js/toggle-menu.js"></script>
+        <script src="../js/infos.js"></script>
+        <script src="../js/title-reader.js"></script>
+        <script src="../js/word-randomer.js"></script>
+        <script src="../js/number-randomizer.js"></script>
+        <script src="../js/three-change-page.js"></script>
+
+        <div class="--footer prevent-select"></div>
+    </div>
+</body>
+</html>
+

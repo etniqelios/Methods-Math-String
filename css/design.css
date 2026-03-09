@@ -1,0 +1,496 @@
+/* ROOT\* */
+
+:root {
+    --color-50: #EAF1FA;
+    --color-100: #C5D7F2;
+    --color-200: #9FBDE9;
+    --color-300: #7AA3E1;
+    --color-400: #5589D8;
+    --color-500: #2E6CC9;
+    --color-600: #275BAA;
+    --color-700: #1E4785;
+    --color-800: #163360;
+    --color-900: #0D1F3A;
+    --color-950: #050B15;
+
+    --black-50: #F2F2F2;
+    --black-100: #DADADA;
+    --black-200: #C2C2C2;
+    --black-300: #AAAAAA;
+    --black-400: #919191;
+    --black-500: #797979;
+    --black-600: #616161;
+    --black-700: #494949;
+    --black-800: #303030;
+    --black-900: #181818;
+    --black-950: #000000;
+
+    --green-50: #EDF9EC;
+    --green-100: #CDEEC9;
+    --green-200: #ACE2A6;
+    --green-300: #8CD784;
+    --green-400: #6CCC61;
+    --green-500: #48B83B;
+    --green-600: #3E9E33;
+    --green-700: #307B28;
+    --green-800: #23591D;
+    --green-900: #153611;
+    --green-950: #081306;
+    /*
+     * https://htmlcolorcodes.com/
+     */
+}
+
+* {
+    font-family: monospace;
+    font-size: 105%;
+}
+
+
+
+/* OTHERS */
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    /*
+     * https://www.w3schools.com/howto/howto_css_disable_text_selection.asp
+     */
+}
+
+/* BASIC MARKERS */
+
+body {
+    margin: 0;
+    background-image: url(../img/background-dry.png);
+    background-size: 20%;
+}
+
+button {
+    margin: 2px;
+    background-color: var(--color-500);
+    color: white;
+    border: none;
+    font-size: 90%;
+    padding: 5px 15px 5px 15px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 5px solid var(--color-600);
+}
+
+button:hover {
+    background-color: var(--color-400);
+    border-bottom: 5px solid var(--color-500);
+    cursor: pointer;
+}
+
+
+input {
+    margin-top: 15px;
+    font-size: 90%;
+    text-shadow: 0 2px 0 white;
+
+
+}
+
+input[type=checkbox] {
+    scale: 1.2;
+    position: relative;
+    top: 1px;
+}
+
+label {
+    border-left: 5px solid transparent;
+}
+
+label:hover {
+    cursor: pointer;
+    border-left: 5px solid var(--green-400);
+    background-color: var(--green-200);
+}
+
+/* MIXED */
+
+label:hover .box-info {
+    color: var(--green-300);
+}
+
+/* CLASSES */
+
+
+.root {
+    display: flex;
+}
+
+.--label-margin {
+    margin: 0;
+}
+
+.--navigation {
+    background: var(--color-700);
+    font-size: 120%;
+    box-shadow: 0 0 128px 0 #00000044;
+    min-height: 50px;
+    width: 350px;
+    float: left;
+}
+
+.--navigation-moblie {
+    height: 100%;
+    position: fixed;
+    width: 800px;
+    background: var(--color-700);
+    z-index: 20;
+}
+
+.--navigation-moblie h1 {
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    color: white;
+    scale: 200%;
+    margin-top: 75px;
+}
+
+.--navigation-mobile-button {
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    width: auto;
+    display: flex;
+    align-items: center ;
+    font-size: 200%;
+    color: white;
+}
+
+.--navigation-mobile-close-button {
+    padding: 20px;
+    background: white;
+    width: auto;
+    font-size: 200%;
+}
+
+.--navigation-mobile-open-button {
+    padding: 10px;
+    background: var(--color-500);
+    color: white;
+    width: 80px;
+    float: left;
+    font-size: 180%;
+    cursor: pointer;
+}
+
+.--navigation-mobile-open-button, .--navigation-mobile-close-button, .--navigation-mobile-button, .--navigation-moblie h1, .--navigation-moblie {
+    display: none;
+}
+
+
+
+.--navigation-header {
+    padding: 25px;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+.--navigation-mobile-header {
+    padding: 25px;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+
+.--navigation-background-panel {
+    height: 100%;
+    width: 350px;
+    background-color: var(--color-800);
+    position: fixed;
+
+}
+
+.--navigation-button {
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    width: auto;
+    display: flex;
+    align-items: center ;
+    font-size: 100%;
+    color: white;
+}
+
+.--navigation-button:hover {
+    cursor: pointer;
+    background-color: var(--color-600);
+    color: white;
+}
+
+.--navigation-button:hover .emoticon-key {
+    color: white;
+}
+
+.--navigation-button:hover .emoticon-house {
+    color: white;
+}
+
+.--xgen-inator-page {
+    display: flex;
+    justify-content: center;
+}
+
+.--xgen-container {
+    background-color: white;
+
+    text-align: center;
+    box-shadow: 0 0 98px 0 #00000033;
+    width: 50%;
+    margin: 100px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid var(--black-300)
+}
+
+.--page-header-box {
+    padding: 15px;
+    width: auto;
+    background-color: var(--color-600);
+    border-bottom: 5px solid var(--color-700);
+    overflow: hidden;
+
+}
+
+.--page-header-box img {
+    width: 40%;
+}
+
+.--page-option-box {
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-bottom: 2px solid var(--black-100);
+    border-top: 2px solid var(--black-100);
+    height: auto;
+    padding-bottom: 10px;
+    font-size: 85%;
+}
+
+.--page-footer-box {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: auto;
+}
+
+.box-text {
+    background-color: var(--black-100);
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.box-info {
+    background-color: var(--black-800);
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.box-comment{
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: red;
+    display: flex;
+    justify-self: center;
+}
+.--footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+
+}
+
+.emoticon-yellow {
+    margin-right: 10px;
+    font-size: 70%;
+    color: #CCC668;
+    text-shadow: 0 0 2px black;
+}
+
+.emoticon-blue {
+    margin-right: 10px;
+    font-size: 70%;
+    color: #61AFCF;
+    text-shadow: 0 0 2px black;
+}
+
+.text-content-button {
+
+}
+
+.--index-page {
+    display: flex;
+    justify-content: center;
+}
+
+.--index-container {
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 98px 0 #00000033;
+    width: 650px;
+    padding-bottom: 25px;
+    height: auto;
+    border-bottom: 5px solid var(--black-300);
+    margin-top: 100px;
+
+}
+
+.--index-page-header-box {
+    padding: 15px;
+    width: auto;
+    background-color: var(--color-600);
+    border-bottom: 5px solid var(--color-700);
+    overflow: auto;
+}
+
+.--index-content-box {
+    padding-top: 0;
+}
+
+.--index-content-box p {
+    text-wrap: wrap;
+    font-size: 90%;
+}
+
+.light-text {
+    color: var(--color-500);
+    border-bottom: 2px solid var(--color-500);
+}
+
+.--navigation-mobile-gui-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 200%;
+    margin: 10px;
+}
+
+.--navigation-gui-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 100%;
+    margin: 10px;
+}
+
+.--header-box-float-right {
+    clear: both;
+    padding: 0;
+}
+
+.color-box {
+    height: 25px;
+    width: 25px;
+    background-color: var(--black-200);
+}
+
+.info-symbol {
+    position: relative;
+    left: 325px;
+    border-radius: 2em;
+    padding: 2px 8px 2px 8px;
+    background-color: white;
+    color: black;
+    font-size: 80%;
+    box-shadow: 0 0 8px 0 black;
+
+}
+
+.info-symbol-box  {
+    display: none;
+    font-size: 80%;
+    position: fixed;
+    left: 375px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px 0 #00000022;
+    color: black;
+    background: white;
+    height: auto;
+    animation: 0.3s forwards --animation-info-box;
+    text-shadow: 12px black;
+}
+
+.-info-content {
+    width: 0;
+    height: 0;
+    margin-bottom: 20px;
+    display: fixed;
+}
+
+.info-symbol-box span {
+
+}
+
+.-info-content:hover .info-symbol-box {
+    display: block;
+}
+
+.--index-pc-info img {
+    width: 45%;
+}
+
+.--index-textarea {
+    resize: none;
+    height: 50px;
+    width: 400px;
+    font-size: 90%;
+}
+
+.input-randoms {
+    border: none;
+    border-left: 5px solid var(--color-600);
+    width: 50px;
+    background-color: var(--color-100);
+    color: black;
+    margin: 5px;
+    box-shadow: 0 0 0 2px black;
+}
+
+.input-words {
+    border: none;
+    border-left: 5px solid var(--color-600);
+    width: 35%;
+    background-color: var(--color-100);
+    color: black;
+    margin: 5px;
+    box-shadow: 0 0 0 2px black;
+}
+
+
+.textarea-words {
+    text-shadow: 0 2px 0 white;
+    border: none;
+    border-left: 5px solid var(--color-600);
+    width: 90%;
+    background-color: var(--color-100);
+    color: black;
+    margin: 5px;
+    height: 70px;
+    box-shadow: 0 0 0 2px black;
+}
+
+
+/* ID'S */

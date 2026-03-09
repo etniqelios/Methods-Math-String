@@ -1,0 +1,228 @@
+.--navigation-cuts {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 1700px) {
+
+    /* BASIC MARKERS */
+
+
+    /* CLASSES */
+
+    .--index-container {
+        font-size: 80%;
+    }
+
+    .--index-pc-info img {
+        width: 20%;
+    }
+    .--navigation {
+        width: 250px;
+
+    }
+
+    .--navigation-button {
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        width: auto;
+        display: flex;
+        align-items: center ;
+        font-size: 80%;
+        color: white;
+    }
+
+    .--navigation-gui-info, .--navigation-index-content  {
+        font-size: 70%
+    }
+
+    .--navigation-background-panel {
+        width: 250px;
+    }
+
+    .info-symbol {
+        left: 230px;
+        padding: 2px 7px 2px 7px;
+    }
+
+    .info-symbol-box  {
+        left: 270px;
+    }
+
+    .--navigation-cuts {
+        display: block;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    /* BASIC MARKERS */
+
+
+    /* CLASSES */
+
+    .--navigation {
+        width: 200px;
+
+    }
+
+    .--navigation-button {
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+        width: auto;
+        display: flex;
+        align-items: center ;
+        font-size: 60%;
+        color: white;
+    }
+
+    .--navigation-gui-info, .--navigation-index-content  {
+        font-size: 60%
+    }
+
+    .--navigation-background-panel {
+        width: 200px;
+    }
+
+    .info-symbol {
+        left: 230px;
+    }
+
+    .info-symbol-box  {
+        left: 280px;
+    }
+
+    .--navigation-cuts {
+        display: block;
+    }
+
+    .-info-content {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    /* BASIC MARKERS */
+
+
+    /* CLASSES */
+
+    .--navigation-moblie {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+
+@media (max-width: 0px) {
+
+    /* BASIC MARKERS */
+
+
+    /* CLASSES */
+
+}
+
+
+@media (max-width: 1000px) {
+    * {
+
+    }
+
+    /* BASIC MARKERS */
+
+    body {
+        background-size: 70%;
+        background-position-x: 175px;
+    }
+
+    input[type=checkbox] {
+        scale: 2;
+        position: relative;
+        bottom: 3px;
+        margin: 0;
+        left: 15px;
+
+    }
+
+    label {
+
+    }
+
+
+    select {
+        scale: 1;
+    }
+
+    /* CLASSES */
+
+    .--index-pc-info {
+        display: none;
+    }
+
+    .--label-margin {
+        margin: 35px;
+    }
+
+    .--xgen-container {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 25px;
+        font-size: 200%;
+    }
+
+    .--index-container {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 25px;
+        font-size: 200%;
+    }
+
+    .--index-page-header-box  {
+        height: 97px;
+        margin-top: 0;
+    }
+
+    .--index-content-box {
+        padding-top: 100px;
+    }
+
+    .--header-box-float-right {
+        float: right;
+        padding: 25px;
+    }
+
+    .--navigation {
+        display: none;
+    }
+
+    .--xgen-inator-page, .--index-page {
+        background-color: white;
+    }
+
+    .--page-header-box img {
+        position: relative;
+        right: 35px;
+    }
+
+    .--navigation-mobile-open-button {
+        display: block;
+    }
+
+    .--navigation-mobile-open-button, .--navigation-mobile-close-button, .--navigation-mobile-button, .--navigation-moblie h1 {
+        display: block;
+    }
+
+    .--navigation-moblie  {
+        animation: 0.2s ease-out --mobile-menu-open;
+        opacity: 1;
+    }
+}

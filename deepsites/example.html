@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xgen: Example</title>
+    <link rel="stylesheet" href="../css/design.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/keyframes.css">
+
+    <!-- SYMBOLS/EMOTICONS PACK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../icon/icon-2.ico">
+</head>
+<body>
+    <div id="root">
+
+        <!-- PC VERSION MENU -->
+        <div class="--navigation prevent-select">
+
+            <div class="--navigation-header">Menu option</div>
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="location-name"></span>
+            </a>
+
+            <a class="--navigation-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <!-- ALL PC LINKS -->
+
+            <!--
+
+                EXAMPLE LOCATION
+
+            <a class="--navigation-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-house">
+                    <i class="fa-solid fa-house" style="color: white"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            -->
+
+            <div class="--navigation-background-panel">
+                <div class="--navigation-gui-info">
+                    <span id="version-pc"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MOBLIE VERSION MENU -->
+        <div class="--navigation-moblie prevent-select" id="window-menu">
+
+            <h1>Menu selector</h1>
+
+            <div class="--navigation-mobile-close-button" onclick="MenuClose()">
+                <i class="fa-solid fa-close"></i>
+                <span class="text-content-button">Close menu</span>
+            </div>
+
+            <a class="--navigation-mobile-button" style="background-color: var(--color-600); border-left: 5px solid white;" href="#">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-circle" style="color: white"></i>
+                </span>
+                <span class="text-content-button" id="mobile-location-name"></span>
+            </a>
+
+            <a class="--navigation-mobile-button" href="../index.html">
+                <span class="emoticon-blue">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text-content-button">Index</span>
+            </a>
+
+            <!-- ALL MOBLIE LINKS -->
+
+            <div class="--navigation-mobile-gui-info">
+                <span id="version-mobile"></span>
+            </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="--index-page">
+            <div class="--index-container" id="page1" style="display: block">
+                <div class="--index-page-header-box prevent-select">
+                    <i class="fa-solid fa-circle --header-box-float-right" style="color: white;"></i>
+                    <div class="--navigation-mobile-open-button" onclick="MenuOpen()">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="--index-content-box prevent-select">
+                    <h3>Example page</h3>
+                    <p>Waits for content</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="../js/toggle-menu.js"></script>
+        <script src="../js/infos.js"></script>
+        <script src="../js/title-reader.js"></script>
+
+        <div class="--footer prevent-select"></div>
+    </div>
+</body>
+</html>
+
